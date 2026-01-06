@@ -1,6 +1,6 @@
 # COBOL Modernization with Hercules & SpecOps
 
-![Hercules](Hercules.gif)
+![Hercules](hercules.gif)
 
 ## Project Objective
 
