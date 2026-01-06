@@ -1,0 +1,43 @@
+# MVS TK5 Turnkey System (downloaded separately)
+mvs-tk5/
+mvs-tk5.zip
+
+# DASD (virtual disk) images
+*.390
+*.391
+*.392
+*.380
+*.190
+*.191
+*.192
+*.248
+*.249
+*.290
+*.291
+*.292
+*.293
+*.298
+*.299
+dasd/
+
+# Hercules output files
+*.log
+prt/
+pch/
+rdr/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak

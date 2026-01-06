@@ -1,0 +1,82 @@
+#----------------------------------------------------------------------
+#       Hercules Configuration File
+#       COBOL Modernization Project
+#----------------------------------------------------------------------
+#
+#       This is a basic configuration template. It will need to be
+#       updated once we install an MVS turnkey system (TK5).
+#
+#       For full configuration options, see:
+#       http://www.hercules-390.org/hercconf.html
+#
+#----------------------------------------------------------------------
+
+#----------------------------------------------------------------------
+#       System Parameters
+#----------------------------------------------------------------------
+
+# Architecture mode: S/370, ESA/390, or z/Arch
+# MVS 3.8J requires S/370 mode
+ARCHMODE    S/370
+
+# CPU identification
+CPUSERIAL   000001
+CPUMODEL    3033
+CPUVERID    FD
+
+# Main storage size in megabytes
+# 16MB is plenty for MVS 3.8J; increase for larger workloads
+MAINSIZE    16
+
+# Number of CPUs (MVS 3.8J is single-processor only)
+NUMCPU      1
+MAXCPU      1
+
+# Console port for 3270 terminal connections
+CNSLPORT    3270
+
+# HTTP server for web-based console (optional)
+# HTTPPORT    8081
+
+# Panel display options
+PANRATE     FAST
+LOGOPT      TIMESTAMP
+
+# Operating system tailoring (reduces unnecessary messages)
+OSTAILOR    OS/390
+
+#----------------------------------------------------------------------
+#       Device Configuration
+#----------------------------------------------------------------------
+#
+#       Devices will be configured when we install the TK5 turnkey
+#       system. The TK5 distribution includes its own configuration
+#       files optimized for its DASD layout.
+#
+#       Typical device types for MVS 3.8J:
+#
+#       Console Devices:
+#       001F    3270    (Master console - connect via tn3270)
+#
+#       Card Reader/Punch/Printer:
+#       000C    3505    (Card reader)
+#       000D    3525    (Card punch)
+#       000E    1403    (Line printer)
+#
+#       DASD (Direct Access Storage Devices):
+#       0148    3350    mvsres.148  (System residence volume)
+#       014A    3350    mvsdlb.14a  (Distribution libraries)
+#       etc.
+#
+#       Tape Drives:
+#       0480    3420    (Tape drive)
+#
+#----------------------------------------------------------------------
+
+# Placeholder device - at least one device is required
+# This will be replaced by TK5 configuration
+0009    3215-C  /
+
+#----------------------------------------------------------------------
+#       End of Configuration
+#----------------------------------------------------------------------
